@@ -1,5 +1,7 @@
 # `ts-assert-exists`
 
+[![npm](https://img.shields.io/npm/v/ts-assert-exists.svg)](https://www.npmjs.com/package/ts-assert-exists) [![Travis](https://img.shields.io/travis/iamakulov/ts-assert-exists.svg)](https://travis-ci.org/iamakulov/ts-assert-exists)
+
 > Assert that a value exists – and remove `| null | undefined` from its type
 
 ## Install
