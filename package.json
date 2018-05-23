@@ -19,6 +19,7 @@
         "test": "jest && tslint --project ."
     },
     "author": "Ivan Akulov <mail@iamakulov.com>",
+    "repository": "iamakulov/ts-assert-exists",
     "keywords": ["typescript", "assert"],
     "license": "MIT"
 }
