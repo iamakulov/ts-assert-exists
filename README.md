@@ -88,3 +88,5 @@ assertExists<Type>(value: Type | null | undefined, messageToThrow?: string): Typ
 ## License
 
 MIT © [Ivan Akulov](https://iamakulov.com)
+
+Based upon [the code snippet](https://github.com/Microsoft/TypeScript/issues/8655#issuecomment-373864014) shared by [@Pauan](https://github.com/Pauan).
