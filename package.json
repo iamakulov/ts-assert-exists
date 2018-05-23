@@ -1,6 +1,6 @@
 {
     "name": "ts-assert-exists",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Assert that a value exists – and remove `| null | undefined` from its type",
     "main": "lib/index.js",
     "dependencies": {
@@ -20,6 +20,9 @@
     },
     "author": "Ivan Akulov <mail@iamakulov.com>",
     "repository": "iamakulov/ts-assert-exists",
-    "keywords": ["typescript", "assert"],
+    "keywords": [
+        "typescript",
+        "assert"
+    ],
     "license": "MIT"
 }
