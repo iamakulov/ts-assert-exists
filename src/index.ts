@@ -1,13 +1,13 @@
 // Based upon https://github.com/Microsoft/TypeScript/issues/8655
 function assertExists<Type>(
-    value: Type | undefined,
+    value: Type | null | undefined,
     messageToThrow?: string,
 ): Type {
-    if (value !== undefined) {
+    if (value !== undefined && value !== null) {
         return value;
     } else {
         throw new Error(
-            messageToThrow || 'assertExists: The passed value is undefined',
+            messageToThrow || 'assertExists: The passed value doesn’t exist',
         );
     }
 }

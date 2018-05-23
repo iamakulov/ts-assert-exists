@@ -1,8 +1,7 @@
 {
     "name": "ts-assert-exists",
     "version": "1.0.0",
-    "description":
-        "Assert that a value exists – and remove `| undefined` from its type",
+    "description": "Assert that a value exists – and remove `| null | undefined` from its type",
     "main": "lib/index.ts",
     "dependencies": {
         "tslint": "^5.10.0",

@@ -1,6 +1,6 @@
 # `ts-assert-exists`
 
-> Assert that a value exists – and remove `| undefined` from its type
+> Assert that a value exists – and remove `| null | undefined` from its type
 
 ## Install
 
@@ -16,7 +16,7 @@ import assertExists from 'ts-assert-exists';
 const twitterToken: string = assertExists(process.env.TWITTER_TOKEN);
 // Type of `process.env.TWITTER_TOKEN` is `string | undefined`.
 // `assertExists` will cast `process.env.TWITTER_TOKEN` to `string`
-// and throw if `process.env.TWITTER_TOKEN` would be undefined.
+// and throw if `process.env.TWITTER_TOKEN` would be null or undefined.
 ```
 
 or
@@ -31,7 +31,7 @@ const twitterToken: string = assertExists(
 // Type of `process.env.TWITTER_TOKEN` is `string | undefined`.
 // `assertExists` will cast `process.env.TWITTER_TOKEN` to `string`
 // and throw an error with “Twitter token does not exist”
-// if `process.env.TWITTER_TOKEN` would be undefined.
+// if `process.env.TWITTER_TOKEN` would be null or undefined.
 ```
 
 ## Why
@@ -80,7 +80,7 @@ repeatString(definedVariable, 5);
 ## API
 
 ```ts
-assertExists<Type>(value: Type | undefined, messageToThrow?: string): Type;
+assertExists<Type>(value: Type | null | undefined, messageToThrow?: string): Type;
 ```
 
 ## License
