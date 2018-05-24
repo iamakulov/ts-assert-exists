@@ -3,6 +3,7 @@
     "version": "1.0.3",
     "description": "Assert that a value exists – and remove `| null | undefined` from its type",
     "main": "lib/index.js",
+    "types": "lib/index.d.ts",
     "dependencies": {
         "tslint": "^5.10.0",
         "tslint-config-prettier": "^1.13.0",
